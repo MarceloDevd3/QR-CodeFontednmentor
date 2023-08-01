@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+:root {
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Light-gray);
+}
+
+@keyframes loadingFade {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+}
+
+main {
+    position: absolute;
+    top: 3.5rem;
+    left: 5.5rem
+}
+
+.ber-radius {
+    border-radius: 10px;
+}
+
+.card {
+    width: 100%;
+    min-width: 320px;
+    max-width: 325px;
+    height: 498px;
+    background-color:var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: loadingFade ease-in-out 1.5s;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card .top-img  img{
+    width: 280px;
+    height: 290px;
+    margin: 20px 0 10px 0;
+}
+
+.gray {
+    color: var(--Grayish-blue);
+}
+
+h1 {
+  font-size: 20px;
+  color: var(--Dark-blue);
+  margin-bottom: 7px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+
+@media (min-width: 1000px) {
+        
+main {
+    position: absolute;
+    top: 3.5rem;
+    left: 30rem
+}
+}
+
+@media (min-width: 1440px) {
+        
+    main {
+        position: absolute;
+        top: 7rem;
+        left: 35rem
+    }
+
+    .card {
+        width: 100%;
+        min-width: 420px;
+        max-width: 425px;
+        height: 650px;
+        border-radius: 15px;
+    }
+    
+    .card .top-img  img{
+        width: 350px;
+        height: 350px;
+        margin: 40px 0 10px 0;
+    }
+
+    
+h1 {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
