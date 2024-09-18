@@ -13,10 +13,12 @@
 }
 
 body{
-    font-size: 15px;
+    font-size: 0.9375em;
     font-family: 'Outfit', sans-serif;
     background-color: var(--Light-gray);
 }
+
+/*animation*/
 
 @keyframes loadingFade {
     from {
@@ -27,21 +29,22 @@ body{
     }
 }
 
-main {
-    position: absolute;
-    top: 3.5rem;
-    left: 5.5rem
-}
+/*border radius zone*/
 
 .ber-radius {
-    border-radius: 10px;
+  border-radius: 15px;
 }
 
-.card {
-    width: 100%;
-    min-width: 320px;
-    max-width: 325px;
-    height: 498px;
+#radius  {
+    border-radius: 25px;
+}
+
+/*Card*/
+
+#card {
+    margin: 2.2em auto;
+    width: 300px;
+    height: 480px;
     background-color:var(--White);
     display: flex;
     flex-direction: column;
@@ -51,66 +54,37 @@ main {
     transition: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.card .top-img  img{
-    width: 280px;
-    height: 290px;
-    margin: 20px 0 10px 0;
+img{
+    max-width: 100%;
+    padding: 1em;
 }
 
-.gray {
+/*card info*/
+
+#gray {
     color: var(--Grayish-blue);
-}
-
-h1 {
-  font-size: 20px;
-  color: var(--Dark-blue);
-  margin-bottom: 7px;
-}
-
-p{
     margin-top: 10px;
 }
 
+#card-title {
+  font-size: 20px;
+  color: var(--Dark-blue);
+  margin: .7em 0;
+}
+
+
 
 @media (min-width: 1000px) {
-        
-main {
-    position: absolute;
-    top: 3.5rem;
-    left: 30rem
-}
+    #card {
+        margin: 5.7em auto 1.1em auto;
+        transform: scale(1.1);
+    }
+    
 }
 
 @media (min-width: 1440px) {
-        
-    main {
-        position: absolute;
-        top: 7rem;
-        left: 35rem
-    }
-
-    .card {
-        width: 100%;
-        min-width: 420px;
-        max-width: 425px;
-        height: 650px;
-        border-radius: 15px;
-    }
-    
-    .card .top-img  img{
-        width: 350px;
-        height: 350px;
-        margin: 40px 0 10px 0;
-    }
-
-    
-h1 {
-    font-size: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  p {
-    font-size: 20px;
-  }
+    #card {
+        margin: 17em auto 1.1em auto;
+        transform: scale(1.4);
+    }   
 }
