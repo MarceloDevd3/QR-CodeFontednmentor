@@ -42,7 +42,7 @@ body{
 /*Card*/
 
 #card {
-    margin: 2.2em auto;
+    margin: 2.2em auto 0 auto;
     width: 300px;
     height: 480px;
     background-color:var(--White);
